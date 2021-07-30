@@ -16,7 +16,7 @@ forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `Experiencing: ${body.current.weather_descriptions[0]} Temperature: ${body.current.temperature}°C FeelsLike: ${body.current.feelslike}°C`
+        `Experiencing: ${body.current.weather_descriptions[0]} Temperature: ${body.current.temperature}°C FeelsLike: ${body.current.feelslike}°C Humidity: ${body.current.humidity}%`
       );
     }
   });
